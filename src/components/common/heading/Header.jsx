@@ -1,15 +1,22 @@
-import React from "react";
+import { FaBars } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
+import React, { useState } from "react";
 import Head from "./Head";
 import "./header.css";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const Header = () => {
+  const [click, setclick] = useState(false);
+
   return (
     <>
       <Head />
       <header>
         <nav className="flexSB">
-          <ul className="flexSB">
+          <ul
+            className={click ? "mobile-nav" : "flexSB"}
+            onClick={() => setclick(false)}
+          >
             <li>
               <Link to="/">Home</Link>{" "}
             </li>
@@ -35,6 +42,10 @@ const Header = () => {
           <div className="start">
             <div className="button">GET CERTIFICATE</div>
           </div>
+
+          <button className=" toggle" onClick={() => setclick(!click)}>
+            {click ? <FaTimes /> : <FaBars />}
+          </button>
         </nav>
       </header>
     </>
