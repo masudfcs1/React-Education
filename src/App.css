@@ -7,10 +7,11 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #f8f8f8;
 }
 
 .container {
-  min-width: 55%;
+  min-width: 85%;
   margin: auto;
 }
 
