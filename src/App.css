@@ -75,6 +75,7 @@ button:hover {
 .primary-btn {
   background-color: #1eb2a6;
   color: #fff;
+  cursor: pointer;
 }
 
 #heading {
@@ -102,9 +103,6 @@ p {
 
 .hero #heading h3 {
   color: #fff;
-}
-
-.back {
 }
 
 .hero #heading {
@@ -152,4 +150,18 @@ p {
   font-weight: 500;
   font-size: 17px;
   text-transform: uppercase;
+}
+
+.margin {
+  margin-top: 40.3%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+.flex {
+  display: flex;
 }
