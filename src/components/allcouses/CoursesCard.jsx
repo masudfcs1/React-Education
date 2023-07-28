@@ -40,6 +40,13 @@ const CoursesCard = () => {
                   ))}
                 </div>
               </div>
+              <div className="price">
+                <h3>
+                  {" "}
+                  {d.priceAll}/{d.pricePer}{" "}
+                </h3>
+              </div>
+              <button className="outline-btn">Enroll Now</button>
             </div>
           ))}
         </div>
