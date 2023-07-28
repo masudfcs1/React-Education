@@ -165,3 +165,21 @@ p {
 .flex {
   display: flex;
 }
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .grid,
+  .grid2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .back {
+    background-position: center;
+    padding-top: 50%;
+    height: 80vh;
+  }
+}
